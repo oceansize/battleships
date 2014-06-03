@@ -1,8 +1,12 @@
 class Grid
+  def initialize
+    @board = [[:sea, :sea]]
+  end
 
-	def size
-		@grid_dimensions = [0,0]
-	end
+  def board
+    @board
+  end
+
 
 end
 
