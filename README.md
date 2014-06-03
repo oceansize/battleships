@@ -12,5 +12,6 @@ The brief:
 ## Pairing Partners
 
 * [Josh](https://github.com/JoshFB)
-* [Fitsum](https://github.com/nyeeles)
+* [Fitsum](https://github.com/fitsumt)
 * [Nic](https://github.com/nyeeles)
+* [Roi](https://github.com/roidriscoll)
