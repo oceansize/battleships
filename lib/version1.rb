@@ -1,23 +1,20 @@
 class Grid
   def initialize
-    @board = [[:sea, :sea]]
+    @board = [:sea, :sea]
   end
 
   def board
     @board
   end
 
+  def place(ship,position)
+    @board[position] = ship
+    board
+  end
+
 
 end
 
 class Ship
-
-	def initialize
-		@ship = {ship: "ship"}
-		#@grid_dimensions << @ship
-	end
-
-	def position
-	end
 
 end
