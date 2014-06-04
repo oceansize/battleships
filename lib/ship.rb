@@ -18,4 +18,9 @@ class Ship
     @sunk = true
     self
   end
+
+  def length(length)
+    ship_array
+  end
+
 end

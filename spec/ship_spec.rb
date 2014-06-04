@@ -4,9 +4,11 @@ require 'grid'
 describe 'Ship' do
 	let (:ship) {Ship.new}
 	let (:grid) {Grid.new}
+	let (:longship) {Ship.new}
 
 		it 'can be placed' do
-			expect(grid.place(ship,0)).to eq [ship, :sea]
+			grid.place(ship,"H2")
+			expect(grid.check("H2")).to eq ship
 		end
 
 		it 'should not be hit when initialized' do
@@ -21,5 +23,11 @@ describe 'Ship' do
 		it 'can be sunk' do
 			ship.hit!
 			expect(ship.sunk?).to be_true
+		end
+
+		it 'can be longer than one' do
+			longship.length(3)
+			grid.place(longship, "B5")
+			expect(grid.check("D5")).to eq longship
 		end
 end
