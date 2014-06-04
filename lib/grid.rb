@@ -17,4 +17,21 @@ class Grid
     @board
   end
 
+  def place(ship,position)
+    @board[position] = ship
+    board
+  end
+
+  def check(coordinate)
+    @board[coordinate]
+  end
+
+  def fire_at(coordinate)
+    if check(coordinate) == "sea "
+      "Miss"
+    else
+      check(coordinate).hit!
+    end
+  end
+
 end
