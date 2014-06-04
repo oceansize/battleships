@@ -9,7 +9,7 @@ class Grid
 
   def place(ship,position)
     @board[position] = ship
-    self
+    board
   end
 
   def check(coordinate)
